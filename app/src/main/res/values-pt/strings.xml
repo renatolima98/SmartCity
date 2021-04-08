@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartCity-v2</string>
+    <string name="notes">Notas</string>
+    <string name="user">Utilizador</string>
+    <string name="Pass">Palavra-passe</string>
+    <string name="Login">Entrar</string>
+    <string name="title">Titulo</string>
+    <string name="add">Adicionar</string>
+</resources>

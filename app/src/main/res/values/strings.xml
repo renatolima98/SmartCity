@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartCity-v2</string>
+    <string name="notes">Notes</string>
+    <string name="user">Username</string>
+    <string name="Pass">Password</string>
+    <string name="Login">Login</string>
+    <string name="title">Title</string>
+    <string name="add">Add</string>
+</resources>
