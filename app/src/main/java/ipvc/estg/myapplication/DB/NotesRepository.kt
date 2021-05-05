@@ -17,9 +17,14 @@ class NotesRepository(private val notesDAO: NotesDAO) {
 
 
     suspend fun insert(notes: Notes) {
-        Log.i("teste","ok")
         notesDAO.insert(notes)
     }
+
+
+    suspend fun deleteNote(id: Int) {
+        notesDAO.deleteNote(id)
+    }
+
 
 
 }

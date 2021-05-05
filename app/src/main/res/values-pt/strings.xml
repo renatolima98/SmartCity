@@ -7,4 +7,6 @@
     <string name="Login">Entrar</string>
     <string name="title">Titulo</string>
     <string name="add">Adicionar</string>
+    <string name="AddNoteError">Porfavor preencha todos os campos</string>
+    <string name="removeNote">"Removeu a nota "</string>
 </resources>

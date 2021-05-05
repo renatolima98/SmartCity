@@ -24,6 +24,12 @@ class AddNoteActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.addnota)
         button.setOnClickListener {
 
+            if(titleNoteView.text.isEmpty() || NoteNoteView.text.isEmpty()){
+
+                Toast.makeText(this, R.string.AddNoteError, Toast.LENGTH_SHORT).show()
+
+            } else {
+
                 val replyIntent = Intent(this, NotesActivity::class.java)
                 val text = NoteNoteView.text.toString()
                 val title = titleNoteView.text.toString()
@@ -32,6 +38,7 @@ class AddNoteActivity : AppCompatActivity() {
                 replyIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(replyIntent)
                 finish()
+            }
         }
     }
     companion object{

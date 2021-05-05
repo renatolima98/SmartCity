@@ -6,4 +6,6 @@
     <string name="Login">Login</string>
     <string name="title">Title</string>
     <string name="add">Add</string>
+    <string name="AddNoteError">Please make sure these fields aren\'t empty</string>
+    <string name="removeNote">"You removed the note "</string>
 </resources>

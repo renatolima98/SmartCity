@@ -11,7 +11,8 @@ import ipvc.estg.myapplication.entities.Notes
 
 interface NotesDAO {
 
-    @Query("SELECT * FROM notes ORDER BY title ASC")
+    @Query("SELECT * FROM notes ORDER BY id DESC")
+    // Mudei a query para aparecerem as notas por ordem de criação e nao alfabetica
     fun getAlphabetizedNotes(): LiveData<List<Notes>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
@@ -19,4 +20,8 @@ interface NotesDAO {
 
     @Query("DELETE FROM notes")
     suspend fun deleteAll()
+
+    @Query("DELETE FROM notes where id = :id")
+    suspend fun deleteNote(id: Int)
+
 }
