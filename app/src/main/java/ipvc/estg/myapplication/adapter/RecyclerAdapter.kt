@@ -33,7 +33,7 @@ class RecyclerAdapter internal constructor(context: Context, private val listene
                     listenerDelete.deleteClick(idNoteView.text.toString().toInt(),noteTitleView.text.toString())
                 }
                 R.id.imageEdit->{
-                    listenerEdit.EditClick(idNoteView.text.toString().toInt(), noteTitleView.text.toString(), noteNoteView.text.toString())
+                    listenerEdit.editClick(idNoteView.text.toString().toInt(), noteTitleView.text.toString(), noteNoteView.text.toString())
                 }
             }
         }
@@ -64,6 +64,6 @@ class RecyclerAdapter internal constructor(context: Context, private val listene
     }
 
     interface EditClickListener{
-        fun EditClick(id:Int, titulo:String, notes:String)
+        fun editClick(id:Int, titulo:String, notes:String)
     }
 }

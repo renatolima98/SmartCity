@@ -9,4 +9,6 @@
     <string name="add">Adicionar</string>
     <string name="AddNoteError">Porfavor preencha todos os campos</string>
     <string name="removeNote">"Removeu a nota "</string>
+    <string name="edit">Editar</string>
+    <string name="editNote">Nota editada</string>
 </resources>

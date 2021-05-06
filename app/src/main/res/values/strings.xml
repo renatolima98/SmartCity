@@ -8,4 +8,6 @@
     <string name="add">Add</string>
     <string name="AddNoteError">Please make sure these fields aren\'t empty</string>
     <string name="removeNote">"You removed the note "</string>
+    <string name="edit">Edit</string>
+    <string name="editNote">Great success</string>
 </resources>

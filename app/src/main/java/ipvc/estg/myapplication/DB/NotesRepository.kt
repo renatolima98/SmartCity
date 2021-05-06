@@ -1,6 +1,7 @@
 package ipvc.estg.myapplication.DB
 
 
+import android.icu.text.CaseMap
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.LiveData
@@ -24,6 +25,11 @@ class NotesRepository(private val notesDAO: NotesDAO) {
     suspend fun deleteNote(id: Int) {
         notesDAO.deleteNote(id)
     }
+
+    suspend fun updateNote(id:Int, titulo :String, notes: String) {
+        notesDAO.updateNote(id,titulo,notes)
+    }
+
 
 
 

@@ -66,8 +66,12 @@ class NotesActivity : AppCompatActivity(), RecyclerAdapter.DeleteClickListener, 
         noteViewModel.deleteNote(id)
     }
 
-    override fun EditClick(id: Int, titulo: String, notes: String) {
-        TODO("Not yet implemented")
+    override fun editClick(id: Int, titulo: String, notes: String) {
+        val intent = Intent(this, EditNotesActivity::class.java)
+        intent.putExtra("id", id)
+        intent.putExtra("Titulo", titulo)
+        intent.putExtra("Nota", notes)
+        startActivity(intent)
     }
 
 
