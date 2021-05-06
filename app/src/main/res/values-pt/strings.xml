@@ -11,4 +11,6 @@
     <string name="removeNote">"Removeu a nota "</string>
     <string name="edit">Editar</string>
     <string name="editNote">Nota editada</string>
+    <string name="welcome">"Bem vindo "</string>
+    <string name="loginError">Falha ao autenticar</string>
 </resources>

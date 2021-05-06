@@ -10,4 +10,7 @@
     <string name="removeNote">"You removed the note "</string>
     <string name="edit">Edit</string>
     <string name="editNote">Great success</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="loginError">Authentication failure</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
